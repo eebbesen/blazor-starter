@@ -43,12 +43,12 @@ Once you clone the project, open the solution in the latest release of [Visual S
     func start
     ```
 
-    In another terminal, run:
+    In another terminal in the project root, run:
     ```bash
-    swa start http://localhost:5000 --api-location http://localhost:7071
+    swa start http://localhost:6002 --api-location http://localhost:7071
     ```
 
-    The Static Web Apps CLI (`swa`) starts a proxy on port 4280 that will forward static site requests to the Blazor server on port 5000 and requests to the `/api` endpoint to the Functions server. 
+    The Static Web Apps CLI (`swa`) starts a proxy on port 4280 that will forward static site requests to the Blazor server on port 6002 and requests to the `/api` endpoint to the Functions server.
 
 1. Open a browser and navigate to the Static Web Apps CLI's address at `http://localhost:4280`. You'll be able to access both the client application and the Functions API app in this single address. When you navigate to the "Fetch Data" page, you'll see the data returned by the Functions API app.
 
